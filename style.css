@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    background-color: black;
+    color: rgb(148, 216, 252);
+}
+.navbar{
+    width: 100w;
+    
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 22px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    animation: to-right  ;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    box-shadow: 0 0 10px   rgb(148, 216, 252);
+}
+.navbar ul, a{
+    
+    display: inline-block;
+    color: rgb(148, 216, 252);
+    display: flex; 
+    text-decoration: none;   
+}
+.navbar ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px   rgb(148, 216, 252);
+    animation:slideUp 1s ease  1  forwards;
+    animation-delay: calc(.2s*var(--i));
+}
+.navbar ul a:hover{
+    background-color:rgb(211, 238, 252);
+    color: black;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 4px;
+    margin-right: 12px;
+}
+.navbar span{
+    box-shadow: 0 0 30px   rgb(148, 216, 252);
+    margin-top: 14px;
+    margin-left: 20px;
+}
+.my-pic{
+    width: 300px;
+    height: 350px;
+    border-radius: 40%;
+    margin-left: 40px;
+    background-color: black;
+    box-shadow: 0 0 30px   rgb(148, 216, 252);
+    animation: Up-Down 1s ease-in infinite ;
+}
+.my-pic:hover{
+    background-color:rgb(211, 238, 252); 
+}
+.main{
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 700px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.box span{
+    box-shadow: 0 0 30px   rgb(148, 216, 252);
+}
+.box h1{
+    animation: to-right  ;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;  
+}
+p{
+    animation: to-right  ;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;  
+}
+.heading{
+    animation: slideDown 1s ease-in forwards;
+}
+.heading-2{
+    animation: slideUp 1s ease-in forwards;
+}
+.icons {
+    display: inline-block;
+     display: flex;
+    width: 150px;
+    
+}  
+.icons a:hover{
+    background-color: rgb(87, 84, 84);
+    box-shadow: none;
+}
+.icons img,a{
+    border-radius: 20px;
+    box-shadow: 0 0 30px   rgb(148, 216, 252);
+}
+.icons a{
+    margin-left: 10px;
+    animation: slideUp 1s ease-in 1 forwards;
+    animation-delay: calc(0.1s*var(--i));
+}
+@keyframes to-right {
+    0%{transform: translateX(-100px);
+    opacity: 0;}
+    100%{transform: translateX(0);
+    opacity: 1;}
+}
+.box img{
+    width: 35px;
+    height: 35px;
+    margin: 8px;
+}
+@keyframes left-to-right {
+    0%{transform: translateX(100px);
+    opacity: 0;}
+    100%{transform: translateX(0);
+    opacity: 1;}
+}
+@keyframes slideDown {
+    0%{transform: translateY(-100px);
+    opacity: 0; }
+    100%{transform: translateY(0);
+        opacity: 1; }
+}
+@keyframes slideUp {
+    0%{transform: translateY(50px);
+    opacity: 0; }
+    100%{transform: translateY(0);
+        opacity: 1; }
+}
+@keyframes Up-Down {
+    0%{transform: translateY(0px);
+    opacity: 1; }
+    
+    50%{transform: translateY(-10px);
+        opacity: 1; }
+    100%{transform: translateY(0px);
+            opacity: 1; }
+}
+
