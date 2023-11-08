@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: black;
     color: rgb(148, 216, 252);
@@ -57,7 +61,7 @@ body{
     width: 300px;
     height: 350px;
     border-radius: 40%;
-    margin-left: 40px;
+    margin-left: 100px;
     background-color: black;
     box-shadow: 0 0 30px   rgb(148, 216, 252);
     animation: Up-Down 1s ease-in infinite ;
@@ -66,19 +70,28 @@ body{
     background-color:rgb(211, 238, 252); 
 }
 .main{
+    margin: auto;
+    
     position: relative;
     display: flex;
     margin-top: 100px;
     font-family: 'Ubuntu', sans-serif;
-    width: 700px;
-    margin-left: 10px;
+    width: 1000px;
+   
     font-size: 18px;
+    height: 500px;
+    padding: 10px;
 }
 .box span{
     box-shadow: 0 0 30px   rgb(148, 216, 252);
+    
+}
+.box{
+   margin-left: 80px;
 }
 .box h1{
-    animation: to-right  ;
+    margin-left: 0px;
+   animation: to-right  ;
     animation-delay: 0.2s;
     animation-duration: 1s;
     animation-timing-function: ease-in;  
@@ -97,10 +110,23 @@ p{
 }
 .icons {
     display: inline-block;
-     display: flex;
-    width: 150px;
-    
+    display: flex;
+    width: 40px;
+    margin-top: 40px;
 }  
+.icons1{
+    display: inline-block;
+    display: flex;
+    width: 40px;
+    
+    margin-left: 400px;
+    margin-bottom: 20px;
+}
+.icons1 a{
+    margin-left: 10px;
+    animation: slideUp 1s ease-in 1 forwards;
+    animation-delay: calc(0.1s*var(--i));
+}
 .icons a:hover{
     background-color: rgb(87, 84, 84);
     box-shadow: none;
@@ -152,4 +178,143 @@ p{
     100%{transform: translateY(0px);
             opacity: 1; }
 }
+.container1{
+    margin-top: 60px;
+    width: 100vw;
+    border: 2px  solid white;
+    border-right: 0px;
+    border-left: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+  h1{
+    margin-left: 120px;
+ }
+ hr{
+    background-color: white;
+    width: 210px;
+    height: 2px;
+    margin-left: -20px;
+    margin-top: 0;
+ }
+.box3{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.box1 img{
+    width:200px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px   rgb(148, 216, 252);
+    border: 2px solid white;
+ }
+ .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    
+ }
+ .element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10px;
+   height:28px ;
+    color:black;
+    background-color:  rgb(201, 230, 246);
+    width: 400px;
+    border: 2px solid white;
+ }
+ .box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .container4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .box4{
+    
+    width: 400px;
+    margin: auto;
+ }
+ .box4 p{
+   margin-top: 0px; 
+ }
+ .container4-b{
+    border-bottom: 2px solid white;
+    font-family: 'Ubuntu', sans-serif;
+ }
+ .box4 p{
+    margin-top: 0px;
+    margin-left: 100px;
+ }
+ .box5 h3 hr{
+    width: 320px;
+    background-color: black;
+ }
+ .box5{
+    background-color: whitesmoke;
+    border: 2px solid white;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 600px;
+ }
+ .container4-b h4{
+    margin-left: 120px;}
+ .element2 input{
+    background-color:  rgb(190, 228, 248);
+    border-radius: 8px;
+    border: 2px solid grey;
+    margin-top: 10px;
+    width: 300px;
+    height: 28px;
+    padding: 10px;
+ }
+ .element2 label{
+    color:  rgb(155, 165, 170);;
+ }
+ textarea{
+    background-color: rgb(190, 228, 248);;
+    border: 2px solid grey;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+ }
+ .sub input{
+    background-color: rgb(249, 114, 114);
+    box-shadow: 0 0 10px rgb(166, 68, 68);;
+    border-radius: 10px;
+    width: 150px;
+    height: 28px;
+    margin-left: 80px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+ }
+ .box5 form{
 
+    width: 400px;
+    margin: auto;
+ } 
+ .content2{
+    
+    background-origin: padding-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+ }
+ .container5 h4{
+    margin-left: 700px;
+    font-family: 'Ubuntu', sans-serif;
+ }
+ .container5{
+    background-color: rgb(167, 160, 160);
+    color: black;
+    margin-top: 0px;
+    overflow: hidden;
+ }

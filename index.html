@@ -2,19 +2,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PortFolio</title>
 </head>
 <link rel="shortcut icon" href="img/portfolio.jpg" type="image/x-icon">
 <link rel="stylesheet" href="style.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
 <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <span class="logo">My-Portfolio</span>
               <ul>
-                <li><a href="#"style="--i:1;">Home</a></li>
-                <li><a href="#"style="--i:2;">AboutUs</a></li>
-                <li><a href="#"style="--i:3;">Contact-Us</a></li>
-                <li><a href="#"style="--i:4;">Help</a></li>
+                <li><a href="#navbar"style="--i:1;">Home</a></li>
+                <li><a href="#container1"style="--i:2;">AboutUs</a></li>
+                <li><a href="#contact-it"style="--i:3;">Contact-Us</a></li>
+                <li><a href="#container5"style="--i:4;">Help</a></li>
             </ul>
     </div>
     <div class="main">
@@ -31,6 +31,115 @@
     </div> 
       <img src="img/my-img2.png" alt="" class="my-pic">
     </div>
+    <div class="container1" id="container1">
+      <div class="container4">
+        <div class="box1">
+          <h1>About Me<hr width="180px"></h1>
+          <div class="box3">
+            <img src="img/pic5.jpg" alt="" width="80px">
+          </div>
+          <div class="container2"> <p>Hi, My Name is Rishikant Pravesh. <br>I am a Btech Computer Science Student.This is my Portfolio <br> About me Page which tells about my Qualifications <br> and achievements.So I am basically a Front-End <br> Developer for now and I have also done certifications in <br> Java Development Programs with DSA.I have also learned <br> Programming in c and c++.Here are my rankin:gs given <br> below according to my skills in particular field.</p></div>
+  
+        </div>
+      </div>
+      
+        <div class="box2">
+        <div class="container3">
+          <h2>Qualifications <hr></h2>
+          <h3>Rating in Specific Field </h3>
+          <form action="">
+            <div class="element">
+              <label for="cProgram"><strong>Programming in C:</strong></label>
+              <input type="range" id="cProgram" min="0" max="60">
+            </div>
+            <div class="element">
+              <label for="C++"><strong>Programming in C++:</strong></label>
+              <input type="range" id="C++" min="0" max="70">
+            </div>
+            <div class="element">
+              <label for="Java"><strong>Java:</strong></label>
+              <input type="range" id="Java" min="0" max="60">
+            </div>
+            <div class="element">
+              <label for="Html"><strong>Html:</strong></label>
+              <input type="range" id="Html" min="0" max="80">
+            </div>
+            <div class="element">
+              <label for="Css"><strong>Css:</strong></label>
+              <input type="range" id="Css" min="0" max="80">
+            </div>
+            <div class="element">
+              <label for="JS"><strong>JavaScript:</strong></label>
+              <input type="range" id="JS" min="0" max="60">
+            </div>
+          </form>
+        </div>  
+
+        </div>
+    </div>
+    <div class="container4-b" >
+      <div class="box4" id="contact-it">
+        
+          <h1>Contact-Us</h1>
+          <p>Thanks for Being upto till here</p>
+        </div>
+      <div class="box5">
+        
+        <form action="#">
+          <h3>Want to Know More, Fill This form <hr></h3>
+          <div class="element2">
+            <label for="fname">First-Name:</label><br>
+          <input type="text" placeholder="firstName" id="fname">
+          </div>
+          <div class="element2">
+            <label for="lname">Last-Name:</label><br>
+          <input type="text" placeholder="lastName" id="lname">
+          </div>
+          <div class="element2">
+            <label for="contact">Contact-No:</label><br>
+          <input type="number" placeholder="Contact-No" id="contact">
+          </div>
+          <div class="element2">
+            <label for="email">Email-Id:</label><br>
+           <input type="email" placeholder="Email-Id" id="email">
+          </div>
+          <div class="element2">
+            <label for="query">Type Your Query</label><br>
+          <textarea name="Query" id="query" cols="38" rows="7" placeholder="Type Query Here"></textarea>
+           </div>
+          <div class="sub">
+          <input type="submit" placeholder="Submit" id="email">
+          </div>
+        </form>
+      </div>
+      <h4>If you want to know more About or Have any Queries left click down the icons below :-</h4>
+      <div class="icons1">
+        <a href="https://www.facebook.com" style="--i:5;"><img src="img/facebook.png" alt="" width="40px" height="40px"></a>
+        <a href="https://www.instagram.com" style="--i:6;"><img src="img/instagram.png" alt="" width="40px" height="40px"></a>
+        <a href="https://www.twitter.com" style="--i:7;"><img src="img/twitter (1).png" alt="" width="40px" height="40px"></a>
+      </div>
+      </div>
+      
+    </div>
+    <div class="container5" id="container5">
+      
+        <h4>Help-Care</h4>
+      <div class="content2">
+        <div class="content2-a">
+          <span>Conact-No: 9870645321</span><br>
+          <span>Email-Id: rishiport432@gmail.com</span>
+        </div>
+        <div class="content2-b">
+          <span><strong>Address</strong></span>
+          <p>Sector-12A <br>Plot.no-1371 <br>Village: BahramGar</p>
+        </div>
+        <div class="content2-c">
+          <span><strong>Non-Copyright Content</strong></span>
+          <p>For more details visit page <a href="#">Email-Id: rishiport432@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="index.js"></script>
 </body>
